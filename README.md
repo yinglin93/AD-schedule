@@ -26,9 +26,9 @@ nvm install 14.16.0 and nvm use 14.16.0
 git clone https://github.com/yinglin93/AD_schedule.git
 ```
 
-* Install by Terminal and compile the file
+* Install by Terminal
 ```
-npm install and npm run build
+npm install
 ```
 
 * Start experiencing it!
