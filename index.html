@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AD schedule</title>
+  <link rel="stylesheet" href="dist/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+  <div id="main-app">
+    <nav>
+      <div class="app-logo">
+        <a href="#">
+          <div class="logo-img"></div>
+        </a>
+      </div>
+      <div class="navbar">
+        <div class="menu-icon active">
+          <img src="icons/frame.svg" alt="frame" class="frame-page-icon">
+        </div>
+        <div class="menu-icon">
+          <img src="icons/folder.svg" alt="folder" class="folder-page-icon">
+        </div>
+        <div class="menu-icon">
+          <img src="icons/mail.svg" alt="mail" class="mail-page-icon">
+        </div>
+        <div class="menu-icon">
+          <label for="darkmode-toggle">
+            <div class="darkmode-image"></div>
+          </label>
+          <input type="checkbox" class="darkmode-toggle d-none" id="darkmode-toggle">
+        </div>
+      </div>
+  
+    </nav>
+    <main id="main-content">
+      <div class="right-content">
+        <h1 class="right-content-title ml-6 my-6">Campaign</h1>
+        <div class="table-container scrollbar">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" class="col-checkbox"><input type="checkbox" class="th-checkbox" disabled></th>
+                <th scope="col" class="col-id">ID</th>
+                <th scope="col" class="col-name">Name</th>
+                <th scope="col" class="col-ad">Advertiser<br /><span class="group">Group</span></th>
+                <th scope="col" class="col-description">Description</th>
+                <th scope="col" class="col-price th-col-price">Price <img
+                    src="icons/sort.svg" alt="sort"
+                    class="sort-img"></th>
+                <th scope="col" class="col-start th-col-start">Start Time <img
+                    src="icons/sort.svg" alt="sort"
+                    class="sort-img"></th>
+                <th scope="col" class="col-end th-col-end">End Time <img
+                    src="icons/sort.svg" alt="sort"
+                    class="sort-img"></th>
+                <th scope="col" class="col-action">Actions</th>
+              </tr>
+            </thead>
+            <tbody class="tbody">
+              <tr class="table-row">
+                <th scope="row"><input type="checkbox" class="table-checkbox"></th>
+                <td class="col-id">1</td>
+                <td class="col-name">Christmas 2020</td>
+                <td class="col-ad">Food Market<br><span class="group">Krab</span></td>
+                <td class="description">holiday night during christmas</td>
+                <td class="col-price">$2000</td>
+                <td class="col-start">2020/12/24 19:30</td>
+                <td class="col-end">2021/01/03 23:00</td>
+                <td class="col-action">
+                  <div class="action-toggle" id="action-toggle"><img
+                      src="icons/menu.svg" alt="action"
+                      class="action-icon">
+                  </div>
+                  <div class="action-wrapper toggle-hidden" id="action-wrapper">
+                    <ul class="action-list">
+                      <li class="action-item d-flex align-items-center">
+                        <img src="icons/duplicate.svg" alt="duplicate"><span>Duplicate</span></li>
+                      <li class="action-item d-flex align-items-center">
+                        <img src="icons/edit.svg" alt="edit"><span>Edit</span></li>
+                      <li class="action-item d-flex align-items-center">
+                        <img src="icons/delete.svg" alt="delete"><span>Delete</span></li>
+                      </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <th scope="row"><input type="checkbox" class="table-checkbox"></th>
+                <td class="col-id">1</td>
+                <td class="col-name">Christmas 2020</td>
+                <td class="col-ad">Food Market<br><span class="group">Krab</span></td>
+                <td class="description">holiday night during christmas</td>
+                <td class="col-price">$2000</td>
+                <td class="col-start">2020/12/24 19:30</td>
+                <td class="col-end">2021/01/03 23:00</td>
+                <td class="col-action">
+                  <div class="action-toggle" id="action-toggle">
+                    <img src="icons/menu.svg" alt="action" class="action-icon">
+                  </div>
+                  <div class="action-wrapper toggle-show" id="action-wrapper">
+                    <ul class="action-list">
+                      <li class="action-item d-flex align-items-center">
+                        <img src="icons/duplicate.svg" alt="duplicate"><span>Duplicate</span></li>
+                      <li class="action-item d-flex align-items-center">
+                        <img src="icons/edit.svg" alt="edit"><span>Edit</span></li>
+                      <li class="action-item d-flex align-items-center">
+                        <img src="icons/delete.svg" alt="delete"><span>Delete</span></li>
+                     </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <th scope="row"><input type="checkbox" class="table-checkbox"></th>
+                <td class="col-id">1</td>
+                <td class="col-name">Christmas 2020</td>
+                <td class="col-ad">Food Market<br><span class="group">Krab</span></td>
+                <td class="description">holiday night during christmas</td>
+                <td class="col-price">$2000</td>
+                <td class="col-start">2020/12/24 19:30</td>
+                <td class="col-end">2021/01/03 23:00</td>
+                <td class="col-action">
+                  <div class="action-toggle" id="action-toggle">
+                    <img src="icons/menu.svg" alt="action" class="action-icon">
+                  </div>
+                  <div class="action-wrapper toggle-hidden" id="action-wrapper">
+                    <ul class="action-list">
+                      <li class="action-item d-flex align-items-center">
+                        <img src="icons/duplicate.svg" alt="duplicate"><span>Duplicate</span></li>
+                      <li class="action-item d-flex align-items-center">
+                        <img src="icons/edit.svg" alt="edit"><span>Edit</span></li>
+                      <li class="action-item d-flex align-items-center">
+                        <img src="icons/delete.svg" alt="delete"><span>Delete</span></li>
+                      </ul>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+  
+  <script src="dist/bundle.js"></script>
+</body>
+</html>
